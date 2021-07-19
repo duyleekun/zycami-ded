@@ -1,0 +1,467 @@
+/*
+ * Decompiled with CFR 0.151.
+ * 
+ * Could not load the following classes:
+ *  android.util.SparseArray
+ */
+package com.huawei.hms.aaid.constant;
+
+import android.util.SparseArray;
+import com.huawei.hms.common.ApiException;
+import com.huawei.hms.support.api.client.Status;
+
+public final class ErrorEnum
+extends Enum {
+    public static final /* synthetic */ ErrorEnum[] $VALUES;
+    public static final SparseArray ENUM_MAPPER;
+    public static final /* enum */ ErrorEnum ERROR_3RD_PARTY_INTERNAL_ERROR;
+    public static final /* enum */ ErrorEnum ERROR_API_NOT_SPECIFIED;
+    public static final /* enum */ ErrorEnum ERROR_APP_SERVER_NOT_ONLINE;
+    public static final /* enum */ ErrorEnum ERROR_ARGUMENTS_INVALID;
+    public static final /* enum */ ErrorEnum ERROR_AUTH_INFO_NOT_EXIST;
+    public static final /* enum */ ErrorEnum ERROR_AUTO_INITIALIZING;
+    public static final /* enum */ ErrorEnum ERROR_BIND_SERVICE_SELF_MAPPING;
+    public static final /* enum */ ErrorEnum ERROR_BUILD_CONTENT_ERROR;
+    public static final /* enum */ ErrorEnum ERROR_CACHE_SIZE_EXCEED;
+    public static final /* enum */ ErrorEnum ERROR_CERT_FINGERPRINT_EMPTY;
+    public static final /* enum */ ErrorEnum ERROR_CERT_FINGERPRINT_ERROR;
+    public static final /* enum */ ErrorEnum ERROR_CLIENT_API_INVALID;
+    public static final /* enum */ ErrorEnum ERROR_DELETE_3RD_PARTY_TOKEN_FAILED;
+    public static final /* enum */ ErrorEnum ERROR_EXECUTE_TIMEOUT;
+    public static final /* enum */ ErrorEnum ERROR_FETCH_DOMAIN_FAILED;
+    public static final /* enum */ ErrorEnum ERROR_GET_3RD_PARTY_TOKEN_FAILED;
+    public static final /* enum */ ErrorEnum ERROR_GET_SCOPE_ERROR;
+    public static final /* enum */ ErrorEnum ERROR_HMS_CLIENT_API;
+    public static final /* enum */ ErrorEnum ERROR_HMS_DEVICE_AUTH_FAILED_SELF_MAPPING;
+    public static final /* enum */ ErrorEnum ERROR_HWID_NOT_LOGIN;
+    public static final /* enum */ ErrorEnum ERROR_INTERNAL_ERROR;
+    public static final /* enum */ ErrorEnum ERROR_INVALID_PARAMETERS;
+    public static final /* enum */ ErrorEnum ERROR_LENGTH;
+    public static final /* enum */ ErrorEnum ERROR_LENGTH_OLD;
+    public static final /* enum */ ErrorEnum ERROR_MAIN_THREAD;
+    public static final /* enum */ ErrorEnum ERROR_MISSING_PROJECT_ID;
+    public static final /* enum */ ErrorEnum ERROR_MSG_CACHE;
+    public static final /* enum */ ErrorEnum ERROR_MULTISENDER_NO_RIGHT;
+    public static final /* enum */ ErrorEnum ERROR_NAMING_INVALID;
+    public static final /* enum */ ErrorEnum ERROR_NOT_ALLOW_CROSS_APPLY;
+    public static final /* enum */ ErrorEnum ERROR_NOT_IN_SERVICE;
+    public static final /* enum */ ErrorEnum ERROR_NO_CONNECTION_ID;
+    public static final /* enum */ ErrorEnum ERROR_NO_CONNECTION_ID_OLD;
+    public static final /* enum */ ErrorEnum ERROR_NO_DEVICE_ID_TYPE;
+    public static final /* enum */ ErrorEnum ERROR_NO_DEVICE_ID_TYPE_OLD;
+    public static final /* enum */ ErrorEnum ERROR_NO_NETWORK;
+    public static final /* enum */ ErrorEnum ERROR_NO_NETWORK_OLD;
+    public static final /* enum */ ErrorEnum ERROR_NO_RIGHT;
+    public static final /* enum */ ErrorEnum ERROR_NO_RIGHT_SELF_MAPPING;
+    public static final /* enum */ ErrorEnum ERROR_NO_TOKEN;
+    public static final /* enum */ ErrorEnum ERROR_NO_TOKENSIGN;
+    public static final /* enum */ ErrorEnum ERROR_NO_TOKEN_OLD;
+    public static final /* enum */ ErrorEnum ERROR_OPERATION_NOT_SUPPORTED;
+    public static final /* enum */ ErrorEnum ERROR_OPER_IN_CHILD_PROCESS;
+    public static final /* enum */ ErrorEnum ERROR_OVER_FLOW_CONTROL_SIZE;
+    public static final /* enum */ ErrorEnum ERROR_PARAM_INVALID;
+    public static final /* enum */ ErrorEnum ERROR_PERMISSION_EXPIRED;
+    public static final /* enum */ ErrorEnum ERROR_PERMISSION_LIST_EMPTY;
+    public static final /* enum */ ErrorEnum ERROR_PERMISSION_NOT_AUTHORIZED;
+    public static final /* enum */ ErrorEnum ERROR_PERMISSION_NOT_EXIST;
+    public static final /* enum */ ErrorEnum ERROR_PROFILE_EXCEED;
+    public static final /* enum */ ErrorEnum ERROR_PUSH_ARGUMENTS_INVALID;
+    public static final /* enum */ ErrorEnum ERROR_PUSH_CLIENT_API_INVALID;
+    public static final /* enum */ ErrorEnum ERROR_PUSH_EXECUTE_TIMEOUT;
+    public static final /* enum */ ErrorEnum ERROR_PUSH_INTERNAL_ERROR;
+    public static final /* enum */ ErrorEnum ERROR_PUSH_NAMING_INVALID;
+    public static final /* enum */ ErrorEnum ERROR_PUSH_NOT_IN_SERVICE;
+    public static final /* enum */ ErrorEnum ERROR_PUSH_SERVER;
+    public static final /* enum */ ErrorEnum ERROR_PUSH_SERVER_OLD;
+    public static final /* enum */ ErrorEnum ERROR_RESTRICT_GET_TOKEN;
+    public static final /* enum */ ErrorEnum ERROR_RETRY_LATER_SELF_MAPPING;
+    public static final /* enum */ ErrorEnum ERROR_SCOPE_LIST_EMPTY;
+    public static final /* enum */ ErrorEnum ERROR_SEND_SELF_MAPPING;
+    public static final /* enum */ ErrorEnum ERROR_SERVICE_NOT_AVAILABLE;
+    public static final /* enum */ ErrorEnum ERROR_SESSION_INVALID;
+    public static final /* enum */ ErrorEnum ERROR_SIZE;
+    public static final /* enum */ ErrorEnum ERROR_SPUSH_ESSION_INVALID;
+    public static final /* enum */ ErrorEnum ERROR_STORAGE_LOCATION_EMPTY;
+    public static final /* enum */ ErrorEnum ERROR_TOKENSIGN_VALID;
+    public static final /* enum */ ErrorEnum ERROR_TOKEN_DECRYPT;
+    public static final /* enum */ ErrorEnum ERROR_TOKEN_URL_EMPTY;
+    public static final /* enum */ ErrorEnum ERROR_TOO_MANY_MESSAGES;
+    public static final /* enum */ ErrorEnum ERROR_TOPIC_EXCEED;
+    public static final /* enum */ ErrorEnum ERROR_TOPIC_SEND;
+    public static final /* enum */ ErrorEnum ERROR_TTL_EXCEEDED;
+    public static final /* enum */ ErrorEnum ERROR_UNKNOWN;
+    public static final /* enum */ ErrorEnum ERROR_UPSTREAM_DEVICE_NOT_IN_GROUP;
+    public static final /* enum */ ErrorEnum ERROR_UPSTREAM_STORAGE_LOCATION_EMPTY;
+    public static final /* enum */ ErrorEnum ERROR_UPSTREAM_TOKENSIGN_VALID;
+    public static final /* enum */ ErrorEnum ERROR_UPSTREAM_TOKEN_DECRYPT;
+    public static final /* enum */ ErrorEnum SUCCESS;
+    public int externalCode;
+    public int internalCode;
+    public String message;
+
+    static {
+        Object object;
+        ErrorEnum errorEnum2 = null;
+        SparseArray sparseArray = null;
+        String string2 = "success";
+        ErrorEnum[] errorEnumArray = object;
+        object = new ErrorEnum("SUCCESS", 0, 0, 0, string2);
+        SUCCESS = object;
+        errorEnumArray = new ErrorEnum("ERROR_NO_TOKEN", 1, 800000000, 907122030, "token missing");
+        ERROR_NO_TOKEN = errorEnumArray;
+        Object object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NO_TOKENSIGN", 2, 800000001, 907122032, "token invalid");
+        ERROR_NO_TOKENSIGN = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NO_NETWORK", 3, 800000002, 907122031, "no network");
+        ERROR_NO_NETWORK = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_SERVICE_NOT_AVAILABLE", 4, 800000003, 907122046, "service not available");
+        ERROR_SERVICE_NOT_AVAILABLE = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PUSH_SERVER", 5, 800000004, 907122047, "push server error");
+        ERROR_PUSH_SERVER = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_UNKNOWN", 6, 800000005, 907122045, "unknown error");
+        ERROR_UNKNOWN = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NO_RIGHT", 7, 800100000, 907122036, "no right");
+        ERROR_NO_RIGHT = errorEnumArray;
+        int n10 = 907122037;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NO_CONNECTION_ID", 8, 800100001, n10, "get token error");
+        ERROR_NO_CONNECTION_ID = errorEnumArray;
+        int n11 = 907122037;
+        errorEnumArray = new ErrorEnum("ERROR_LENGTH", 9, 800100002, n11, "get token error");
+        ERROR_LENGTH = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NO_DEVICE_ID_TYPE", 10, 800100003, n10, "get token error");
+        ERROR_NO_DEVICE_ID_TYPE = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PARAM_INVALID", 11, 800100004, n11, "get token error");
+        ERROR_PARAM_INVALID = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_TOKEN_URL_EMPTY", 12, 800100005, n10, "get token error");
+        ERROR_TOKEN_URL_EMPTY = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NOT_ALLOW_CROSS_APPLY", 13, 800100006, 907122053, "Failed to apply for the token. Cross-region application is not allowed.");
+        ERROR_NOT_ALLOW_CROSS_APPLY = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_MULTISENDER_NO_RIGHT", 14, 800100007, 907122039, "Failed to apply for the token. No multisender right.");
+        ERROR_MULTISENDER_NO_RIGHT = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_TOKEN_DECRYPT", 15, 800200001, 907122032, "token invalid");
+        ERROR_TOKEN_DECRYPT = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_TOKENSIGN_VALID", 16, 800200002, 907122032, "token invalid");
+        ERROR_TOKENSIGN_VALID = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_TOPIC_EXCEED", 17, 800200003, 907122034, "topic exceed");
+        ERROR_TOPIC_EXCEED = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_TOPIC_SEND", 18, 800200004, 907122035, "topic send error");
+        ERROR_TOPIC_SEND = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_STORAGE_LOCATION_EMPTY", 19, 800200005, 907122038, "storage location is empty or invalid");
+        ERROR_STORAGE_LOCATION_EMPTY = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_SIZE", 20, 800300000, 907122041, "message size error");
+        ERROR_SIZE = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_INVALID_PARAMETERS", 21, 800300001, 907122042, "parameter invalid");
+        ERROR_INVALID_PARAMETERS = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_TOO_MANY_MESSAGES", 22, 800300002, 907122043, "too many messages");
+        ERROR_TOO_MANY_MESSAGES = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_TTL_EXCEEDED", 23, 800300003, 907122044, "ttl exceed");
+        ERROR_TTL_EXCEEDED = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_UPSTREAM_TOKEN_DECRYPT", 24, 800300004, 907122032, "token invalid");
+        ERROR_UPSTREAM_TOKEN_DECRYPT = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_UPSTREAM_TOKENSIGN_VALID", 25, 800300005, 907122032, "token invalid");
+        ERROR_UPSTREAM_TOKENSIGN_VALID = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_UPSTREAM_DEVICE_NOT_IN_GROUP", 26, 800300006, 907122057, "device not in device group");
+        ERROR_UPSTREAM_DEVICE_NOT_IN_GROUP = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_UPSTREAM_STORAGE_LOCATION_EMPTY", 27, 800300007, 907122038, "storage location is empty or invalid");
+        ERROR_UPSTREAM_STORAGE_LOCATION_EMPTY = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_CACHE_SIZE_EXCEED", 28, 800300008, 907122058, "cache size exceeds threshold");
+        ERROR_CACHE_SIZE_EXCEED = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_MSG_CACHE", 29, 800300009, 907122059, "message is cached");
+        ERROR_MSG_CACHE = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_APP_SERVER_NOT_ONLINE", 30, 800300010, 907122060, "app server is not online.");
+        ERROR_APP_SERVER_NOT_ONLINE = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_OVER_FLOW_CONTROL_SIZE", 31, 800300011, 907122061, "frequency of message is over flow control size.");
+        ERROR_OVER_FLOW_CONTROL_SIZE = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PUSH_ARGUMENTS_INVALID", 32, 807135000, 907135000, "arguments invalid");
+        ERROR_PUSH_ARGUMENTS_INVALID = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PUSH_INTERNAL_ERROR", 33, 807135001, 907135001, "internal error");
+        ERROR_PUSH_INTERNAL_ERROR = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PUSH_NAMING_INVALID", 34, 807135002, 907135002, "naming invalid");
+        ERROR_PUSH_NAMING_INVALID = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PUSH_CLIENT_API_INVALID", 35, 807135003, 907135003, "client api invalid");
+        ERROR_PUSH_CLIENT_API_INVALID = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PUSH_EXECUTE_TIMEOUT", 36, 807135004, 907135004, "execute timeout");
+        ERROR_PUSH_EXECUTE_TIMEOUT = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PUSH_NOT_IN_SERVICE", 37, 807135005, 907135005, "not int service");
+        ERROR_PUSH_NOT_IN_SERVICE = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_SPUSH_ESSION_INVALID", 38, 807135006, 907135006, "session invalid");
+        ERROR_SPUSH_ESSION_INVALID = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_ARGUMENTS_INVALID", 39, 907135000, 907135000, "arguments invalid");
+        ERROR_ARGUMENTS_INVALID = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_INTERNAL_ERROR", 40, 907135001, 907135001, "internal error");
+        ERROR_INTERNAL_ERROR = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NAMING_INVALID", 41, 907135002, 907135002, "naming invalid");
+        ERROR_NAMING_INVALID = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_CLIENT_API_INVALID", 42, 907135003, 907135003, "client api invalid");
+        ERROR_CLIENT_API_INVALID = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_EXECUTE_TIMEOUT", 43, 907135004, 907135004, "execute timeout");
+        ERROR_EXECUTE_TIMEOUT = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NOT_IN_SERVICE", 44, 907135005, 907135005, "not int service");
+        ERROR_NOT_IN_SERVICE = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_SESSION_INVALID", 45, 907135006, 907135006, "session invalid");
+        ERROR_SESSION_INVALID = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_API_NOT_SPECIFIED", 46, 1002, 1002, "API not specified");
+        ERROR_API_NOT_SPECIFIED = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_GET_SCOPE_ERROR", 47, 907135700, 907135700, "get scope error");
+        ERROR_GET_SCOPE_ERROR = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_SCOPE_LIST_EMPTY", 48, 907135701, 907135701, "scope list empty");
+        ERROR_SCOPE_LIST_EMPTY = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_CERT_FINGERPRINT_EMPTY", 49, 907135702, 907135702, "certificate fingerprint empty");
+        ERROR_CERT_FINGERPRINT_EMPTY = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PERMISSION_LIST_EMPTY", 50, 907135703, 907135703, "permission list empty");
+        ERROR_PERMISSION_LIST_EMPTY = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_AUTH_INFO_NOT_EXIST", 51, 6002, 6002, "auth info not exist");
+        ERROR_AUTH_INFO_NOT_EXIST = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_CERT_FINGERPRINT_ERROR", 52, 6003, 6003, "certificate fingerprint error");
+        ERROR_CERT_FINGERPRINT_ERROR = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PERMISSION_NOT_EXIST", 53, 6004, 6004, "permission not exist");
+        ERROR_PERMISSION_NOT_EXIST = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PERMISSION_NOT_AUTHORIZED", 54, 6005, 6005, "permission not authorized");
+        ERROR_PERMISSION_NOT_AUTHORIZED = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PERMISSION_EXPIRED", 55, 6006, 6006, "permission expired");
+        ERROR_PERMISSION_EXPIRED = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NO_NETWORK_OLD", 56, 907122005, 907122031, "no network");
+        ERROR_NO_NETWORK_OLD = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NO_RIGHT_SELF_MAPPING", 57, 907122011, 907122036, "no right");
+        ERROR_NO_RIGHT_SELF_MAPPING = errorEnumArray;
+        n10 = 907122037;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NO_CONNECTION_ID_OLD", 58, 907122012, n10, "get token error");
+        ERROR_NO_CONNECTION_ID_OLD = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_LENGTH_OLD", 59, 907122013, 907122037, "get token error");
+        ERROR_LENGTH_OLD = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NO_DEVICE_ID_TYPE_OLD", 60, 907122014, n10, "get token error");
+        ERROR_NO_DEVICE_ID_TYPE_OLD = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_PUSH_SERVER_OLD", 61, 907122017, 907122047, "push server error");
+        ERROR_PUSH_SERVER_OLD = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_NO_TOKEN_OLD", 62, 907122019, 907122030, "token missing");
+        ERROR_NO_TOKEN_OLD = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_HMS_CLIENT_API", 63, 907122048, 907122048, "HMS client api invalid");
+        ERROR_HMS_CLIENT_API = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_OPERATION_NOT_SUPPORTED", 64, 907122049, 907122049, "operation not supported");
+        ERROR_OPERATION_NOT_SUPPORTED = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_MAIN_THREAD", 65, 907122050, 907122050, "operation in MAIN thread prohibited");
+        ERROR_MAIN_THREAD = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_HMS_DEVICE_AUTH_FAILED_SELF_MAPPING", 66, 907122051, 907122051, "device certificate auth fail");
+        ERROR_HMS_DEVICE_AUTH_FAILED_SELF_MAPPING = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_BIND_SERVICE_SELF_MAPPING", 67, 907122052, 907122052, "bind service failed.");
+        ERROR_BIND_SERVICE_SELF_MAPPING = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_AUTO_INITIALIZING", 68, 907122054, 907122054, "push kit initializing, try again later");
+        ERROR_AUTO_INITIALIZING = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_RETRY_LATER_SELF_MAPPING", 69, 907122055, 907122055, "System busy, please retry later.");
+        ERROR_RETRY_LATER_SELF_MAPPING = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_SEND_SELF_MAPPING", 70, 907122056, 907122056, "send error.");
+        ERROR_SEND_SELF_MAPPING = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_MISSING_PROJECT_ID", 71, 907122064, 907122064, "agc connect services config missing project id");
+        ERROR_MISSING_PROJECT_ID = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_RESTRICT_GET_TOKEN", 72, 800100014, 907122065, "restrict get token");
+        ERROR_RESTRICT_GET_TOKEN = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_GET_3RD_PARTY_TOKEN_FAILED", 73, 907122101, 907122101, "get 3rd-party token failed.");
+        ERROR_GET_3RD_PARTY_TOKEN_FAILED = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_DELETE_3RD_PARTY_TOKEN_FAILED", 74, 907122102, 907122102, "delete 3rd-party token failed.");
+        ERROR_DELETE_3RD_PARTY_TOKEN_FAILED = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_3RD_PARTY_INTERNAL_ERROR", 75, 907122103, 907122103, "3rd-party internal error.");
+        ERROR_3RD_PARTY_INTERNAL_ERROR = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_FETCH_DOMAIN_FAILED", 76, 907135104, 907135104, "fetch domain failed.");
+        ERROR_FETCH_DOMAIN_FAILED = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_BUILD_CONTENT_ERROR", 77, 907122105, 907122105, "build content error.");
+        ERROR_BUILD_CONTENT_ERROR = errorEnumArray;
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_HWID_NOT_LOGIN", 78, 907122066, 907122066, "account logout");
+        ERROR_HWID_NOT_LOGIN = errorEnumArray;
+        String string3 = "ERROR_PROFILE_EXCEED";
+        int n12 = 79;
+        int n13 = 800400000;
+        n11 = 907122067;
+        String string4 = "profile num over limit";
+        errorEnumArray = new ErrorEnum(string3, n12, n13, n11, string4);
+        ERROR_PROFILE_EXCEED = errorEnumArray;
+        int n14 = 907122068;
+        n10 = 907122068;
+        object = "Operations in child processes are not supported.";
+        object2 = errorEnumArray;
+        errorEnumArray = new ErrorEnum("ERROR_OPER_IN_CHILD_PROCESS", 80, n14, n10, (String)object);
+        ERROR_OPER_IN_CHILD_PROCESS = errorEnumArray;
+        int n15 = 81;
+        errorEnumArray = new ErrorEnum[n15];
+        object2 = SUCCESS;
+        errorEnumArray[0] = object2;
+        errorEnumArray[1] = object2 = ERROR_NO_TOKEN;
+        errorEnumArray[2] = object2 = ERROR_NO_TOKENSIGN;
+        errorEnumArray[3] = object2 = ERROR_NO_NETWORK;
+        errorEnumArray[4] = object2 = ERROR_SERVICE_NOT_AVAILABLE;
+        errorEnumArray[5] = object2 = ERROR_PUSH_SERVER;
+        errorEnumArray[6] = object2 = ERROR_UNKNOWN;
+        errorEnumArray[7] = object2 = ERROR_NO_RIGHT;
+        errorEnumArray[8] = object2 = ERROR_NO_CONNECTION_ID;
+        errorEnumArray[9] = object2 = ERROR_LENGTH;
+        errorEnumArray[10] = object2 = ERROR_NO_DEVICE_ID_TYPE;
+        errorEnumArray[11] = object2 = ERROR_PARAM_INVALID;
+        errorEnumArray[12] = object2 = ERROR_TOKEN_URL_EMPTY;
+        errorEnumArray[13] = object2 = ERROR_NOT_ALLOW_CROSS_APPLY;
+        errorEnumArray[14] = object2 = ERROR_MULTISENDER_NO_RIGHT;
+        errorEnumArray[15] = object2 = ERROR_TOKEN_DECRYPT;
+        errorEnumArray[16] = object2 = ERROR_TOKENSIGN_VALID;
+        errorEnumArray[17] = object2 = ERROR_TOPIC_EXCEED;
+        errorEnumArray[18] = object2 = ERROR_TOPIC_SEND;
+        errorEnumArray[19] = object2 = ERROR_STORAGE_LOCATION_EMPTY;
+        errorEnumArray[20] = object2 = ERROR_SIZE;
+        errorEnumArray[21] = object2 = ERROR_INVALID_PARAMETERS;
+        errorEnumArray[22] = object2 = ERROR_TOO_MANY_MESSAGES;
+        errorEnumArray[23] = object2 = ERROR_TTL_EXCEEDED;
+        errorEnumArray[24] = object2 = ERROR_UPSTREAM_TOKEN_DECRYPT;
+        errorEnumArray[25] = object2 = ERROR_UPSTREAM_TOKENSIGN_VALID;
+        errorEnumArray[26] = object2 = ERROR_UPSTREAM_DEVICE_NOT_IN_GROUP;
+        errorEnumArray[27] = object2 = ERROR_UPSTREAM_STORAGE_LOCATION_EMPTY;
+        errorEnumArray[28] = object2 = ERROR_CACHE_SIZE_EXCEED;
+        errorEnumArray[29] = object2 = ERROR_MSG_CACHE;
+        errorEnumArray[30] = object2 = ERROR_APP_SERVER_NOT_ONLINE;
+        errorEnumArray[31] = object2 = ERROR_OVER_FLOW_CONTROL_SIZE;
+        errorEnumArray[32] = object2 = ERROR_PUSH_ARGUMENTS_INVALID;
+        errorEnumArray[33] = object2 = ERROR_PUSH_INTERNAL_ERROR;
+        errorEnumArray[34] = object2 = ERROR_PUSH_NAMING_INVALID;
+        errorEnumArray[35] = object2 = ERROR_PUSH_CLIENT_API_INVALID;
+        errorEnumArray[36] = object2 = ERROR_PUSH_EXECUTE_TIMEOUT;
+        errorEnumArray[37] = object2 = ERROR_PUSH_NOT_IN_SERVICE;
+        errorEnumArray[38] = object2 = ERROR_SPUSH_ESSION_INVALID;
+        errorEnumArray[39] = object2 = ERROR_ARGUMENTS_INVALID;
+        errorEnumArray[40] = object2 = ERROR_INTERNAL_ERROR;
+        errorEnumArray[41] = object2 = ERROR_NAMING_INVALID;
+        errorEnumArray[42] = object2 = ERROR_CLIENT_API_INVALID;
+        errorEnumArray[43] = object2 = ERROR_EXECUTE_TIMEOUT;
+        errorEnumArray[44] = object2 = ERROR_NOT_IN_SERVICE;
+        errorEnumArray[45] = object2 = ERROR_SESSION_INVALID;
+        errorEnumArray[46] = object2 = ERROR_API_NOT_SPECIFIED;
+        errorEnumArray[47] = object2 = ERROR_GET_SCOPE_ERROR;
+        errorEnumArray[48] = object2 = ERROR_SCOPE_LIST_EMPTY;
+        errorEnumArray[49] = object2 = ERROR_CERT_FINGERPRINT_EMPTY;
+        errorEnumArray[50] = object2 = ERROR_PERMISSION_LIST_EMPTY;
+        errorEnumArray[51] = object2 = ERROR_AUTH_INFO_NOT_EXIST;
+        errorEnumArray[52] = object2 = ERROR_CERT_FINGERPRINT_ERROR;
+        errorEnumArray[53] = object2 = ERROR_PERMISSION_NOT_EXIST;
+        errorEnumArray[54] = object2 = ERROR_PERMISSION_NOT_AUTHORIZED;
+        errorEnumArray[55] = object2 = ERROR_PERMISSION_EXPIRED;
+        errorEnumArray[56] = object2 = ERROR_NO_NETWORK_OLD;
+        errorEnumArray[57] = object2 = ERROR_NO_RIGHT_SELF_MAPPING;
+        errorEnumArray[58] = object2 = ERROR_NO_CONNECTION_ID_OLD;
+        errorEnumArray[59] = object2 = ERROR_LENGTH_OLD;
+        errorEnumArray[60] = object2 = ERROR_NO_DEVICE_ID_TYPE_OLD;
+        errorEnumArray[61] = object2 = ERROR_PUSH_SERVER_OLD;
+        errorEnumArray[62] = object2 = ERROR_NO_TOKEN_OLD;
+        errorEnumArray[63] = object2 = ERROR_HMS_CLIENT_API;
+        errorEnumArray[64] = object2 = ERROR_OPERATION_NOT_SUPPORTED;
+        errorEnumArray[65] = object2 = ERROR_MAIN_THREAD;
+        errorEnumArray[66] = object2 = ERROR_HMS_DEVICE_AUTH_FAILED_SELF_MAPPING;
+        errorEnumArray[67] = object2 = ERROR_BIND_SERVICE_SELF_MAPPING;
+        errorEnumArray[68] = object2 = ERROR_AUTO_INITIALIZING;
+        errorEnumArray[69] = object2 = ERROR_RETRY_LATER_SELF_MAPPING;
+        errorEnumArray[70] = object2 = ERROR_SEND_SELF_MAPPING;
+        errorEnumArray[71] = object2 = ERROR_MISSING_PROJECT_ID;
+        errorEnumArray[72] = object2 = ERROR_RESTRICT_GET_TOKEN;
+        errorEnumArray[73] = object2 = ERROR_GET_3RD_PARTY_TOKEN_FAILED;
+        errorEnumArray[74] = object2 = ERROR_DELETE_3RD_PARTY_TOKEN_FAILED;
+        errorEnumArray[75] = object2 = ERROR_3RD_PARTY_INTERNAL_ERROR;
+        errorEnumArray[76] = object2 = ERROR_FETCH_DOMAIN_FAILED;
+        errorEnumArray[77] = object2 = ERROR_BUILD_CONTENT_ERROR;
+        errorEnumArray[78] = object2 = ERROR_HWID_NOT_LOGIN;
+        errorEnumArray[79] = object2 = ERROR_PROFILE_EXCEED;
+        object2 = ERROR_OPER_IN_CHILD_PROCESS;
+        int n16 = 80;
+        errorEnumArray[n16] = object2;
+        $VALUES = errorEnumArray;
+        errorEnumArray = new SparseArray();
+        ENUM_MAPPER = errorEnumArray;
+        for (ErrorEnum errorEnum2 : ErrorEnum.values()) {
+            sparseArray = ENUM_MAPPER;
+            n10 = errorEnum2.internalCode;
+            sparseArray.put(n10, (Object)errorEnum2);
+            n10 = errorEnum2.externalCode;
+            sparseArray.put(n10, (Object)errorEnum2);
+        }
+    }
+
+    /*
+     * WARNING - Possible parameter corruption
+     * WARNING - void declaration
+     */
+    public ErrorEnum(String string2) {
+        void var5_3;
+        void var4_2;
+        void var2_-1;
+        void var1_-1;
+        this.internalCode = (int)string2;
+        this.externalCode = var4_2;
+        this.message = var5_3;
+    }
+
+    public static ErrorEnum fromCode(int n10) {
+        SparseArray sparseArray = ENUM_MAPPER;
+        ErrorEnum errorEnum = ERROR_UNKNOWN;
+        return (ErrorEnum)((Object)sparseArray.get(n10, (Object)errorEnum));
+    }
+
+    public static ErrorEnum valueOf(String string2) {
+        return Enum.valueOf(ErrorEnum.class, string2);
+    }
+
+    public static ErrorEnum[] values() {
+        return (ErrorEnum[])$VALUES.clone();
+    }
+
+    public int getExternalCode() {
+        return this.externalCode;
+    }
+
+    public int getInternalCode() {
+        return this.internalCode;
+    }
+
+    public String getMessage() {
+        return this.message;
+    }
+
+    public ApiException toApiException() {
+        int n10 = this.getExternalCode();
+        String string2 = this.getMessage();
+        Status status = new Status(n10, string2);
+        ApiException apiException = new ApiException(status);
+        return apiException;
+    }
+}
+

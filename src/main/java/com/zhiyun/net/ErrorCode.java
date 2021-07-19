@@ -1,0 +1,85 @@
+/*
+ * Decompiled with CFR 0.151.
+ */
+package com.zhiyun.net;
+
+public class ErrorCode {
+    public static final int ACTIVITY_APPLY_EXPIRED = 10307;
+    public static final int ACTIVITY_APPLY_MAXNUM = 10308;
+    public static final int ALIYUN_OSS_TOKEN_ERROR = 10011;
+    public static final int BAND_WORD = 10081;
+    public static final int CAPTCHA_ERROR = 10012;
+    public static final int CROSS_REGIONAL = 10006;
+    public static final int DB_QUERY_FAILED = 304;
+    public static final int DEVICE_ALREADY_BIND = 10020;
+    public static final int DEVICE_ALREADY_BIND_OTHERS = 10021;
+    public static final int DEVICE_NOT_BIND = 10022;
+    public static final int DEVICE_NOT_EXISTS = 10019;
+    public static final int EMAIL_INVALID = 125;
+    public static final int FAIL_SEND_VCODE = 602;
+    public static final int FOREIGN_LOGIN_FAILED = 10126;
+    public static final int FOREIGN_LOGIN_NO_UNIONID = 10127;
+    public static final int GOODS_NO_STOCK = 10250;
+    public static final int HAS_ACTIVED = 10005;
+    public static final int ILLEGAL_PARAMS = 10010;
+    public static final int INVALIDATE_PARAMS = 10004;
+    public static final int INVALIDATE_TOKEN = 10140;
+    public static final int INVALIDATE_VERSION = 10003;
+    public static final int LC_FAIL_SEND_VCODE = 601;
+    public static final int LEANCLOUD_REQ_FAILED = 10007;
+    public static final int MAX_LENGTH_EXCEED = 10015;
+    public static final int MOBILE_INVALID = 127;
+    public static final int NO_PERMISSION = 10002;
+    public static final int ORDER_EXPIRED = 10202;
+    public static final int ORDER_INSERT_FAILED = 10203;
+    public static final int ORDER_NO_ADDR = 10204;
+    public static final int ORDER_NO_GOODS = 10200;
+    public static final int ORDER_SUBMITED = 10201;
+    public static final int PAY_NO_SUCH_CHANNEL = 10420;
+    public static final int PAY_ORDER_PROCESSING = 10401;
+    public static final int PAY_ORDER_REPEAT = 10430;
+    public static final int PAY_ORDER_SUCCESS = 10400;
+    public static final int PAY_PARAM_ERR = 10421;
+    public static final int PAY_REQ_FAILED = 10280;
+    public static final int POST_FAV_EXISTED = 10302;
+    public static final int POST_FAV_NOT_EXISTED = 10303;
+    public static final int POST_LIKE_EXISTED = 10300;
+    public static final int POST_LIKE_NOT_EXISTED = 10301;
+    public static final int POST_NOT_EXIST = 10304;
+    public static final int POST_REPEAT_SUBMITED = 10305;
+    public static final int POST_TAG_INVALID = 10306;
+    public static final int RECORD_EXISTED = 10008;
+    public static final int RECORD_NOT_EXIST = 10009;
+    public static final int STORE_MAX_ADDR = 10251;
+    public static final int SUCCESS = 0;
+    public static final int TOKEN_EXPIRED = 10143;
+    public static final int TOKEN_NOT_EXIST = 10142;
+    public static final int UNKNOW_ERROR = 1;
+    public static final int USER_BANNED = 10184;
+    public static final int USER_BIND_MAIL_EXISTED = 203;
+    public static final int USER_BIND_MOBILE_EXISTED = 204;
+    public static final int USER_BLOCKED = 10182;
+    public static final int USER_BLOCKING = 10183;
+    public static final int USER_CANNOT_UNBIND = 207;
+    public static final int USER_DISABLED = 205;
+    public static final int USER_FOLLOW_EXISTED = 10165;
+    public static final int USER_FOLLOW_NOT_EXIST = 10166;
+    public static final int USER_HAD_BIND = 208;
+    public static final int USER_INVALIDE_ACC = 217;
+    public static final int USER_INVALIDE_PWD = 218;
+    public static final int USER_LOGIN_ERR_ACCPSW = 210;
+    public static final int USER_LOGIN_REQUIRED = 10125;
+    public static final int USER_NICKNAME_EXISTED = 10180;
+    public static final int USER_NICKNAME_ILLEGAL_KW = 10181;
+    public static final int USER_NOT_EXISTS = 211;
+    public static final int USER_NULL_ACC = 200;
+    public static final int USER_NULL_PWD = 201;
+    public static final int USER_OAUTH_DISABLED = 206;
+    public static final int USER_REG_REPEAT = 202;
+    public static final int USER_SEAL = 10185;
+    public static final int USER_WRONG_FORMAT_PWD = 10124;
+    public static final int VCODE_LIMIT_ERROR = 10013;
+    public static final int VCODE_WRONG = 603;
+    public static final int VERSION_NOT_EXIST = 10014;
+}
+

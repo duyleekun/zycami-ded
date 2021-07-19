@@ -1,0 +1,66 @@
+/*
+ * Decompiled with CFR 0.151.
+ */
+package com.google.android.gms.internal.common;
+
+import com.google.android.gms.internal.common.zzl;
+import com.google.android.gms.internal.common.zzo;
+import java.io.Serializable;
+
+public final class zzq
+implements zzo,
+Serializable {
+    private final zzo zza;
+    private volatile transient boolean zzb;
+    private transient Object zzc;
+
+    public zzq(zzo zzo2) {
+        this.zza = zzo2 = (zzo)zzl.zza(zzo2);
+    }
+
+    public final String toString() {
+        StringBuilder stringBuilder;
+        int n10;
+        Object object;
+        boolean bl2 = this.zzb;
+        if (bl2) {
+            object = String.valueOf(this.zzc);
+            n10 = String.valueOf(object).length() + 25;
+            stringBuilder = new StringBuilder(n10);
+            String string2 = "<supplier that returned ";
+            stringBuilder.append(string2);
+            stringBuilder.append((String)object);
+            stringBuilder.append(">");
+            object = stringBuilder.toString();
+        } else {
+            object = this.zza;
+        }
+        object = String.valueOf(object);
+        n10 = String.valueOf(object).length() + 19;
+        stringBuilder = new StringBuilder(n10);
+        stringBuilder.append("Suppliers.memoize(");
+        stringBuilder.append((String)object);
+        stringBuilder.append(")");
+        return stringBuilder.toString();
+    }
+
+    /*
+     * Enabled aggressive block sorting
+     * Enabled unnecessary exception pruning
+     * Enabled aggressive exception aggregation
+     */
+    public final Object zza() {
+        boolean bl2 = this.zzb;
+        if (bl2) return this.zzc;
+        synchronized (this) {
+            boolean bl3;
+            bl2 = this.zzb;
+            if (bl2) return this.zzc;
+            Object object = this.zza;
+            this.zzc = object = object.zza();
+            this.zzb = bl3 = true;
+            return object;
+        }
+    }
+}
+

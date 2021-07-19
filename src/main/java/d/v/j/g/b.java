@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR 0.151.
+ */
+package d.v.j.g;
+
+import androidx.arch.core.util.Function;
+import com.zhiyun.editortemplate.data.database.model.track.ScriptTrackMetaData;
+import d.v.j.g.x;
+
+public final class b
+implements Function {
+    public static final /* synthetic */ b a;
+
+    static {
+        b b10;
+        a = b10 = new b();
+    }
+
+    public final Object apply(Object object) {
+        return x.Q((ScriptTrackMetaData)object);
+    }
+}
+

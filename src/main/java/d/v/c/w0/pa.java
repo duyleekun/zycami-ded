@@ -1,0 +1,107 @@
+/*
+ * Decompiled with CFR 0.151.
+ * 
+ * Could not load the following classes:
+ *  android.util.SparseIntArray
+ *  android.view.View
+ *  android.widget.ImageButton
+ *  android.widget.TextView
+ */
+package d.v.c.w0;
+
+import android.util.SparseIntArray;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.databinding.DataBindingComponent;
+import androidx.databinding.ViewDataBinding;
+import androidx.databinding.ViewDataBinding$IncludedLayouts;
+import d.v.c.w0.oa;
+
+public class pa
+extends oa {
+    private static final ViewDataBinding$IncludedLayouts e;
+    private static final SparseIntArray f;
+    private long d;
+
+    static {
+        SparseIntArray sparseIntArray;
+        f = sparseIntArray = new SparseIntArray();
+        sparseIntArray.put(2131362638, 1);
+        sparseIntArray.put(2131363402, 2);
+    }
+
+    public pa(DataBindingComponent dataBindingComponent, View view) {
+        Object[] objectArray = e;
+        SparseIntArray sparseIntArray = f;
+        objectArray = ViewDataBinding.mapBindings(dataBindingComponent, view, 3, (ViewDataBinding$IncludedLayouts)objectArray, sparseIntArray);
+        this(dataBindingComponent, view, objectArray);
+    }
+
+    private pa(DataBindingComponent dataBindingComponent, View view, Object[] object) {
+        Object object2;
+        Object object3 = object2 = object[0];
+        object3 = (ConstraintLayout)((Object)object2);
+        Object object4 = object2 = object[1];
+        object4 = (ImageButton)object2;
+        object = object[2];
+        TextView textView = object;
+        textView = (TextView)object;
+        super(dataBindingComponent, view, 0, (ConstraintLayout)((Object)object3), (ImageButton)object4, textView);
+        this.d = -1;
+        this.a.setTag(null);
+        this.setRootTag(view);
+        this.invalidateAll();
+    }
+
+    /*
+     * Enabled aggressive block sorting
+     * Enabled unnecessary exception pruning
+     * Enabled aggressive exception aggregation
+     */
+    public void executeBindings() {
+        synchronized (this) {
+            long l10;
+            this.d = l10 = 0L;
+            return;
+        }
+    }
+
+    /*
+     * Enabled aggressive block sorting
+     * Enabled unnecessary exception pruning
+     * Enabled aggressive exception aggregation
+     */
+    public boolean hasPendingBindings() {
+        synchronized (this) {
+            long l10 = this.d;
+            long l11 = 0L;
+            long l12 = l10 == l11 ? 0 : (l10 < l11 ? -1 : 1);
+            if (l12 == false) return false;
+            return (boolean)((long)1);
+        }
+    }
+
+    /*
+     * Enabled aggressive block sorting
+     * Enabled unnecessary exception pruning
+     * Enabled aggressive exception aggregation
+     */
+    public void invalidateAll() {
+        synchronized (this) {
+            long l10;
+            this.d = l10 = 1L;
+        }
+        this.requestRebind();
+    }
+
+    public boolean onFieldChange(int n10, Object object, int n11) {
+        return false;
+    }
+
+    public boolean setVariable(int n10, Object object) {
+        return true;
+    }
+}
+

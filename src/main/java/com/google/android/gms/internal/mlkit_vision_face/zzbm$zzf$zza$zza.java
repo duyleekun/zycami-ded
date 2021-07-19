@@ -1,0 +1,23 @@
+/*
+ * Decompiled with CFR 0.151.
+ */
+package com.google.android.gms.internal.mlkit_vision_face;
+
+import com.google.android.gms.internal.mlkit_vision_face.zzbm$zzf$zza;
+import com.google.android.gms.internal.mlkit_vision_face.zzbo;
+import com.google.android.gms.internal.mlkit_vision_face.zzgd$zza;
+import com.google.android.gms.internal.mlkit_vision_face.zzhn;
+
+public final class zzbm$zzf$zza$zza
+extends zzgd$zza
+implements zzhn {
+    private zzbm$zzf$zza$zza() {
+        zzbm$zzf$zza zzbm$zzf$zza = zzbm$zzf$zza.zza();
+        super(zzbm$zzf$zza);
+    }
+
+    public /* synthetic */ zzbm$zzf$zza$zza(zzbo zzbo2) {
+        this();
+    }
+}
+
